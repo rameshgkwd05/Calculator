@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.75"
+        android:weightSum="1"
+        android:background="#ffffff">
+
+        <!--Input-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/InputFont"
+            android:text=""
+            android:id="@+id/input"/>
+       <!--Result-->
+        <TextView
+            style="@style/ResultFont"
+            android:text=""
+            android:id="@+id/result"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#c5111111">
+
+            <Button
+                style="@style/DigitFont"
+                android:text="7"
+                android:id="@+id/button7"/>
+            <Button
+                style="@style/DigitFont"
+                android:text="4"
+                android:id="@+id/button4" />
+            <Button
+                style="@style/DigitFont"
+                android:text="1"
+                android:id="@+id/button1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#c5111111"
+            android:layout_weight="0.34">
+
+            <Button
+                style="@style/DigitFont"
+                android:text="8"
+                android:id="@+id/button8" />
+            <Button
+                style="@style/DigitFont"
+                android:text="5"
+                android:id="@+id/button5" />
+            <Button
+                style="@style/DigitFont"
+                android:text="2"
+                android:id="@+id/button2" />
+            <Button
+                style="@style/DigitFont"
+                android:text="0"
+                android:id="@+id/button0" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#c5111111"
+            android:layout_weight="0.39">
+
+            <Button
+                style="@style/DigitFont"
+                android:text="9"
+                android:id="@+id/button9" />
+            <Button
+                style="@style/DigitFont"
+                android:text="6"
+                android:id="@+id/button6" />
+            <Button
+                style="@style/DigitFont"
+                android:text="3"
+                android:id="@+id/button3" />
+
+        </LinearLayout>
+
+        <!--Operations-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_weight="0.38"
+            android:background="#7b111111">
+
+            <Button
+                style="@style/OperationFont"
+                android:text="DEL"
+                android:id="@+id/buttonDel" />
+            <Button
+                style="@style/OperationFont"
+                android:text="/"
+                android:id="@+id/buttonDivide" />
+            <Button
+                style="@style/OperationFont"
+                android:text="x"
+                android:id="@+id/buttonMultiply" />
+            <Button
+                style="@style/OperationFont"
+                android:text="-"
+                android:id="@+id/buttonSubtract" />
+            <Button
+                style="@style/OperationFont"
+                android:text="+"
+                android:id="@+id/buttonPlus" />
+            <Button
+                style="@style/OperationFont"
+                android:text="="
+                android:id="@+id/buttonEquals" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
